@@ -189,6 +189,10 @@ dependencies {
     implementation(libs.compose.material.icons)
     implementation(libs.navigation.compose)
     lintChecks(libs.compose.lint.checks)
+    def appCenterSdkVersion = '5.0.4'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
 
     implementation(libs.accompanist.permissions)
 
