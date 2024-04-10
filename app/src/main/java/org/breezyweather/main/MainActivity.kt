@@ -157,7 +157,9 @@ class MainActivity : GeoActivity(),
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val isLaunch = savedInstanceState == null
-
+        AppCenter.start(getApplication(), "f7569866-c666-42cf-af69-25f7dddd3040",
+                  Analytics.class, Crashes.class);
+        
         super.onCreate(savedInstanceState)
 
         if (isLaunch) {
